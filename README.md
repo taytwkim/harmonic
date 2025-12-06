@@ -6,7 +6,7 @@ A simple 2D demonstration of [Harmonic Coordinates for Character Articulation](h
 
 Repo set up instructions are provided below.
 
-## Harmonic Coordinates
+## ⭐ Harmonic Coordinates
 
 In cage-based deformation, a *cage* is defined around a target shape. The deformation of the shape is driven by manipulating the control points (vertices) of the cage. As the cage is deformed, we want the enclosed shape to follow smoothly.
 
@@ -22,25 +22,29 @@ In this project, we use **harmonic coordinates** — a type of weight function c
 
 Harmonic weights are especially useful for complex or non-convex cages, offering smooth and stable results.
 
-## Set Up Instructions
+## 🚀 Set Up Instructions
 
 * Set up a venv
 ```bash
-mkdir gp25
-python3.10 -m venv gp25 # use python 3.10
-source gp25/bin/activate
+python3.10 -m venv .venv # use python 3.10
+source .venv/bin/activate
 ```
 
 * Install packages
 ```bash
-pip install libigl==2.5.0
-pip install git+https://github.com/skoch9/meshplot/
-pip install pythreejs
-pip install notebook
-pip install matplotlib
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 * Launch jupyter notebook
 ```bash
-gp25/bin/jupyter notebook
+jupyter notebook
+```
+
+## ⚠️ Known Errors
+
+`igl.grad` sometimes returns matrix of 0s, causing an error. [Downgrading numpy](https://github.com/libigl/libigl-python-bindings/issues/242) seems to solve the problem.
+
+```bash
+pip install "numpy==1.26.4"
 ```
