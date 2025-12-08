@@ -22,7 +22,7 @@ In this project, we use **harmonic coordinates** — a type of weight function c
 
 Harmonic weights are especially useful for complex or non-convex cages, offering smooth and stable results.
 
-## 🚀 Set Up Instructions
+## 🚀 Getting Started
 
 * Set up a venv
 ```bash
