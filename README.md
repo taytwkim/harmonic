@@ -4,9 +4,11 @@
 
 A simple 2D demonstration of [Harmonic Coordinates for Character Articulation](https://graphics.pixar.com/library/HarmonicCoordinatesB/paper.pdf).
 
+Learn more about the project in [this blog article](https://taytwkim.vercel.app/blog/projects/002-harmonic/).
+
 ## ⭐ Harmonic Coordinates
 
-In cage-based deformation, a *cage* is defined around a target shape. The deformation of the shape is driven by manipulating the control points (vertices) of the cage. As the cage is deformed, we want the enclosed shape to follow smoothly.
+In cage-based deformation, a "cage" is defined around a target shape. The deformation of the shape is driven by manipulating the control points (vertices) of the cage. As the cage is deformed, we want the enclosed shape to follow smoothly.
 
 To achieve this, we assign a set of weights to each interior point `p` relative to the cage control points `(c₁, ..., cₙ)`, such that: `p​ = ∑​ wi​(p) * c​i` and `∑ ci = 1`. These weights determine how much influence each control point has on the interior point. If `p` is closer to `c₁` than to `c₂`, then ideally `w₁ > w₂`.
 
