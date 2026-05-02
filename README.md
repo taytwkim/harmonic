@@ -4,7 +4,7 @@
 
 A simple 2D demonstration of [Harmonic Coordinates for Character Articulation](https://graphics.pixar.com/library/HarmonicCoordinatesB/paper.pdf).
 
-Learn more about the project in [this blog article](https://taytwkim.vercel.app/blog/projects/002-harmonic/).
+Learn more about this project in [this blog article](https://taytwkim.vercel.app/blog/projects/002-harmonic/).
 
 ## ⭐ Harmonic Coordinates
 
@@ -24,7 +24,7 @@ Harmonic weights are especially useful for complex or non-convex cages, offering
 
 ## 🚀 Getting Started
 
-* Set up a venv
+* Set up a `venv`
 ```bash
 python3.10 -m venv .venv # use python 3.10
 source .venv/bin/activate
@@ -36,14 +36,14 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-* Launch jupyter notebook
+* Launch notebook
 ```bash
 jupyter notebook
 ```
 
 ## ⚠️ Known Errors
 
-`igl.grad` sometimes returns matrix of 0s, causing an error. [Downgrading numpy](https://github.com/libigl/libigl-python-bindings/issues/242) seems to solve the problem.
+`igl.grad` sometimes returns a matrix of 0s, causing an error. [Downgrading numpy](https://github.com/libigl/libigl-python-bindings/issues/242) seems to solve the problem.
 
 ```bash
 pip install "numpy==1.26.4"
